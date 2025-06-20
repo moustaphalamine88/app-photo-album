@@ -1,0 +1,185 @@
+/* album.css modifié pour texte centré + bouton couleur logo */
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+  text-align: center; /* <-- texte centré sur tout le body */
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  text-align: left; /* on garde le header aligné à gauche */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main container */
+main, .container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center; /* Texte centré dans le main aussi */
+}
+
+/* Titres */
+h1, h2 {
+  color: #2c3e50;
+}
+/* Bouton centré et stylé */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #3498db; /* bleu ciel */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1.5rem auto; /* marge top/bottom + centrage horizontal */
+  transition: background-color 0.3s ease;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+  
+  /* Centrer le bouton */
+  display: block;
+  width: max-content;
+}
+
+/* Hover du bouton */
+.button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 6px 12px rgba(41, 128, 185, 0.6);
+}
+
+/* Listes */
+ul {
+  padding-left: 1rem;
+  text-align: left; /* pour garder la liste lisible */
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Miniatures photos */
+.thumbnail {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* --- FORMULAIRES -- */
+
+/* Labels formulaires */
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: left; /* pour que label soit aligné à gauche */
+}
+
+/* Champs input, textarea, select */
+form input[type="text"],
+form input[type="file"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus */
+form input[type="text"]:focus,
+form input[type="file"]:focus,
+form input[type="date"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #2c3e50;
+  outline: none;
+}
+
+/* Textarea */
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Conteneur formulaire */
+form {
+  margin-top: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* formulaire aligné à gauche pour meilleure lisibilité */
+}
+
+/* Messages d’erreur/succès */
+.form-message {
+  margin-top: 0.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .thumbnail {
+      width: 100%;
+      max-width: 100%;
+  }
+}

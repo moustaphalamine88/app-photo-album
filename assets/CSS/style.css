@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #fffbe6 !important;
+    border-bottom: 2px solid #ffcc5b;
+}
+
+.navbar-brand img {
+    border-radius: 10px;
+}
+
+.navbar .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 2px solid #ffcc5b;
+    color: #ff9900;
+}
+
+.navbar .btn:hover {
+    background-color: #ffcc5b;
+    color: white;
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+    border-bottom: 4px solid #ffcc5b;
+}
+
+h2 {
+    color: #ff9900;
+    font-weight: bold;
+    text-shadow: 1px 1px #fff3cd;
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+    background-color: #fff5cc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-text {
+    color: #444;
+    font-size: 1.05rem;
+}
+
+footer {
+    background-color: #ffcc5b;
+    color: #333;
+    font-weight: 500;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+

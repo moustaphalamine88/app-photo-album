@@ -1,0 +1,135 @@
+
+/* Variables de couleur orange */
+:root {
+  --orange: #FFA500;
+  --orange-dark: #e38b00;
+  --bg-light: #fffaf0;
+}
+
+/* Conteneur général */
+.album-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--orange);
+  background-color: #fff;
+}
+
+/* Titres et paragraphes */
+.album-container h2,
+.album-container p,
+.album-container h4,
+.album-container strong,
+.album-container em,
+.album-container .no-comment,
+.album-container .comment-item,
+.album-container textarea,
+.album-container .photo-comments label {
+  color: var(--orange);
+}
+
+/* Boutons en orange */
+.album-container .btn {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.album-container .btn:hover {
+  background-color: var(--orange-dark);
+}
+
+/* Images */
+.album-container img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--orange);
+}
+
+/* Mise en page des photos */
+.album-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cartes photos */
+.photo-card {
+  background-color: var(--bg-light);
+  border: 2px solid var(--orange);
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(255,165,0, 0.2);
+}
+
+/* Commentaires */
+.photo-comments {
+  margin-top: 15px;
+}
+
+.comment-list {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: var(--orange);
+}
+
+/* Formulaire de commentaire */
+.add-comment-form textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  margin-top: 10px;
+  background-color: #fffef9;
+  color: var(--orange);
+}
+
+.add-comment-form textarea::placeholder {
+  color: #e38b00;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .album-container {
+    padding: 10px;
+  }
+
+  .album-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-card {
+    width: 100%;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e67e22;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  display: none;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}

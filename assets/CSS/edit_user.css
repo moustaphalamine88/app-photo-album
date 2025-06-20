@@ -1,0 +1,78 @@
+:root {
+    --main-orange: #ffb300;
+    --bg-dark: #000000;
+    --text-light: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.edit-user-form {
+    background-color: #1a1a1a;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 179, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.edit-user-form h1 {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.edit-user-form label {
+    color: var(--text-light);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.edit-user-form select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #2b2b2b;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.edit-user-form button {
+    width: 100%;
+    background-color: var(--main-orange);
+    color: var(--text-light);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-user-form button:hover {
+    background-color: #e6a300;
+}
+
+.edit-user-form a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.edit-user-form a:hover {
+    text-decoration: underline;
+}

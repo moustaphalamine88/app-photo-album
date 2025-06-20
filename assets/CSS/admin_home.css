@@ -1,0 +1,106 @@
+/* admin_home.css */
+
+/* Corps de la page */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+}
+
+/* Titre principal */
+h1 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #e9ecef !important;
+    padding: 1rem;
+}
+
+.navbar .navbar-brand img {
+    max-height: 80px;
+}
+
+.navbar .navbar-text {
+    font-size: 1rem;
+    color: #212529;
+}
+
+.navbar .btn-outline-danger {
+    background-color: black !important;
+    border-color: black !important;
+    color: white !important;
+}
+
+.navbar .btn-outline-danger:hover,
+.navbar .btn-outline-danger:focus {
+    background-color: #222 !important;
+    border-color: #222 !important;
+    color: white !important;
+}
+
+/* Boutons noirs */
+.btn {
+    background-color: black !important;
+    border-color: black !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #222 !important;
+    border-color: #222 !important;
+    color: white !important;
+}
+
+/* Cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card h4 {
+    font-weight: 600;
+    color: #000;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background-color: black !important;
+    color: white !important;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+
+/* Bouton orange personnalisé */
+.btn-orange {
+    background-color: #ff7700;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e06300;
+}
+
+/* Responsive : supprimer la bordure du bouton de déconnexion */
+@media (max-width: 576px) {
+    .btn-outline-danger {
+        border: none !important;
+        background-color: transparent;
+        color: #dc3545; /* couleur texte rouge Bootstrap */
+        padding: 0.5rem 0.75rem;
+    }
+}

@@ -1,0 +1,61 @@
+/* Texte à l’intérieur des cards en blanc */
+.card {
+  border: 2px solid #FFA500 !important;
+  background-color: #FFA500 !important; /* fond orange */
+  color: #fff !important; /* texte blanc */
+  transition: box-shadow 0.3s ease;
+}
+
+.card h5, .card p, .card .card-title, .card .card-text {
+  color: #fff !important;
+}
+
+/* Texte en dehors des cards en orange */
+body, section, h1, h2, h3, h4, h5, p, a {
+  color: #FFA500 !important;
+}
+
+/* Sauf le footer et navbar qui ont leurs propres styles (tu peux ajuster au besoin) */
+
+/* Footer */
+footer.bg-dark {
+  background-color: #FFA500 !important;
+  color: #fff !important;
+}
+
+footer.bg-dark a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+footer.bg-dark a:hover {
+  color: #e69500 !important;
+  text-decoration: underline;
+}
+
+/* Boutons en orange-jaune */
+.btn, .btn-outline-primary {
+  background-color: #FFA500 !important;
+  border-color: #FFA500 !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover, .btn-outline-primary:hover {
+  background-color: #e69500 !important;
+  border-color: #e69500 !important;
+  color: #fff !important;
+}
+
+/* Navbar boutons */
+.navbar .btn {
+  background-color: #FFA500 !important;
+  border-color: #FFA500 !important;
+  color: #fff !important;
+}
+
+.navbar .btn:hover {
+  background-color: #e69500 !important;
+  border-color: #e69500 !important;
+  color: #fff !important;
+}
